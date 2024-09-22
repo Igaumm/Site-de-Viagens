@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência de Viagens</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Explore o Mundo com a Nossa Agência de Viagens</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinos">Destinos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h2>A Aventura Começa Aqui</h2>
+        <p>Pacotes incríveis para destinos inesquecíveis!</p>
+        <a href="#destinos" class="cta-button">Ver Destinos</a>
+    </section>
+
+    <section id="destinos">
+        <h2>Destinos Populares</h2>
+        <div class="destinos-container">
+            <div class="destino" onclick="mostrarInfo('Paris')">
+                <img src="paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+            </div>
+            <div class="destino" onclick="mostrarInfo('Nova York')">
+                <img src="morar-em-nova-york.jpg" alt="Nova York">
+                <h3>Nova York</h3>
+            </div>
+            <div class="destino" onclick="mostrarInfo('Tóquio')">
+                <img src="toquio.jpg" alt="Tóquio">
+                <h3>Tóquio</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="reserva">
+        <h2>Faça sua Reserva</h2>
+        <form>
+            <label for="destino">Destino:</label><br>
+            <select id="destino" name="destino" required>
+                <option value="paris">Paris</option>
+                <option value="nova-york">Nova York</option>
+                <option value="toquio">Tóquio</option>
+            </select><br><br>
+
+            <label for="data">Data de Ida:</label><br>
+            <input type="date" id="data" name="data" required><br><br>
+
+            <label for="data-volta">Data de Volta:</label><br>
+            <input type="date" id="data-volta" name="data-volta" required><br><br>
+
+            <label for="pessoas">Número de Pessoas:</label><br>
+            <input type="number" id="pessoas" name="pessoas" required min="1" max="10"><br><br>
+
+            <input type="submit" value="Reservar">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Agência de Viagens. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

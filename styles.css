@@ -1,0 +1,157 @@
+/* Estilo global */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #009ffd, #2a2a72);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Seção Hero (Home) */
+.hero-section {
+    background: url(montanha.jpg) no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6f61;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff4c3b;
+}
+
+/* Seção de Destinos */
+#destinos {
+    padding: 50px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+}
+
+#destinos h2 {
+    color: #2a2a72;
+    margin-bottom: 30px;
+}
+
+.destinos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.destino {
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.destino:hover {
+    transform: scale(1.05);
+}
+
+.destino img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.destino h3 {
+    margin-top: 10px;
+}
+
+/* Formulários */
+form {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+    border-radius: 15px;
+}
+
+form input, form select, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+form input[type="submit"] {
+    background-color: #009ffd;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #006bbf;
+}
+
+/* Footer */
+footer {
+    background-color: #2a2a72;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+}
